@@ -2,6 +2,7 @@ import React from 'react'
 import App, { Container } from 'next/app'
 import Head from 'next/head'
 import 'styles/index.scss'
+import { DefaultTemplate } from 'components/templates'
 
 import { createStore, applyMiddleware, compose } from 'redux'
 import { Provider } from 'react-redux'
@@ -35,9 +36,15 @@ class CustomApp extends App {
       <Container>
         <Head>
           <title>Born Worker</title>
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/antd/3.20.3/antd.css"
+          />
         </Head>
         <Provider store={store}>
-          <Component {...pageProps} />
+          <DefaultTemplate>
+            <Component {...pageProps} />
+          </DefaultTemplate>
         </Provider>
       </Container>
     )
