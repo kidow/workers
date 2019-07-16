@@ -1,0 +1,22 @@
+@import './color.scss';
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR:500,700&subset=korean');
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: $oc-gray-1;
+  font-family: 'Apple SD Gothic Neo', AppleSDGothicNeo, 'Noto Sans CJK KR',
+    'NanumGothic', 'Malgun Gothic', '맑은 고딕', 돋움, dotum, arial, sans-serif;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
