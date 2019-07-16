@@ -1,3 +1,10 @@
+import './index.scss'
+import { Logo } from 'components/atoms'
+
 export default () => {
-  return <header>header</header>
+  return (
+    <header>
+      <Logo />
+    </header>
+  )
 }

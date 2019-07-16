@@ -17,6 +17,36 @@ body {
 }
 
 a {
-  text-decoration: inherit;
-  color: inherit;
+  text-decoration: none;
+  color: $oc-gray-9;
+  // &:hover {
+  //   text-decoration: underline;
+  // }
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+textarea,
+i,
+button {
+  outline: none;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+textarea {
+  border-width: 1px;
+  resize: none;
+}
+
+.flex {
+  display: flex;
 }
